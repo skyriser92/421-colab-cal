@@ -108,7 +108,24 @@ namespace IS421GroupProject
             }
             return (culm/(meanlist.Length));
         }
-		 
+	public static int modefunction(int[] mlist){
+            var dic = new Dictionary<int,int>();
+            int highnum=0;
+            int highcount=0;
+            foreach(int i in mlist){
+                if (dic.ContainsKey(i)){
+                    dic[i]++;
+                }
+                else{
+                    dic[i] = 1;
+                }
+                if (dic[i]>highcount){
+                    highnum=i;
+                    highcount=dic[i];
+                }
+            }
+            return highnum;
+        }		 
 		 
 		 
     }
