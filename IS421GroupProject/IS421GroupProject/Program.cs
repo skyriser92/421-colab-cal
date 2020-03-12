@@ -147,7 +147,28 @@ namespace IS421GroupProject
         }
 	public static int skew(int[] mlist){
             return((meanfun(mlist)-modefunct(mlist))/standarddev(mlist));
-        }	
+        }
+	public static int PearCor(int[] xlist, int[] ylist){
+            sumx = 0;
+            sumy = 0;
+            sumxy = 0;
+            sumxsqrd = 0;
+            sumysqrd = 0;
+            foreach (int i in xlist){
+                sumx += i;
+                sumxsqrd += (i**2);
+            }
+            foreach (int i in ylist){
+                sumy += i;
+                sumysqrd += (i**2);
+            }
+            foreach (int i in xlist){
+                foreach (int e in ylist){
+                    sumxy += (i + e);
+                }
+            }
+            return (((xlist.Length)*(sumxy))-(sumx*sumy))/(Math.Sqrt((xlist.Length*sumxsqrd-(sumx**2))*((xlist.Length*sumysqrd)-(sumy**2))));
+        }
 		 
     }
 }
