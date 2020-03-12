@@ -94,7 +94,10 @@ namespace IS421GroupProject
         }
 	public static decimal ConfidenceIntervalSample(decimal standarderror, decimal[] num, decimal tscore){
             return (meanfunct(num)+(tscore*(standarderror/(Math.Sqrt(num.Length)))));
-        }	 
+        }
+	public static double MarginOfError(decimal cval, decimal[] num){
+            return (cval *(standarddev(num)/(Math.Sqrt(num.Length))));
+        }
 		 
 	
     }
