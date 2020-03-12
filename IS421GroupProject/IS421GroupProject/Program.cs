@@ -23,9 +23,17 @@ namespace IS421GroupProject
             Random rand = new Random(25);
             var number = new decimal(rand.Next(num1, num2) * rand.NextDouble());
             return number;
+        }    
+        public static int[] RandListInt(int x)
+        {
+            Random rand = new Random(25);
+            int[] result = new int[x];
+            for (int ctr = 0; ctr <= x; ctr++)
+            {
+                result[ctr] = rand.Next();
+            }
+            return result;
         }
-	    
-        
         
     }
 }
