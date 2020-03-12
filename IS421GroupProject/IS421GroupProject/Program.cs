@@ -64,6 +64,17 @@ namespace IS421GroupProject
             Random rand = new Random(seed);
             return rand.Next(0,list.Length-1);
         }
+	public static int simplerandomsampling(int[] rsample, int rsamplesize){
+            if (rsample.Length < rsamplesize){
+                return null;
+            }
+            int[] rlist = new int[rsamplesize];
+            for (int i = 0;i == rsamplesize;i++){
+                rlist[i]=rsample[rand.Next(0,rsample.Length-1)];
+            }
+            return rlist;
+            //this returns duplicates
+        }
 	    
     }
 }
