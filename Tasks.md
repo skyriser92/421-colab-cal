@@ -1,5 +1,5 @@
 | To Do  | Status | Assigned To |
-| ------------- | ------------- |
+| ------------- | ------------- | ------------- |
 | Generate Random Number in a range (no seed, Int and Dec)  | Done  | Scott |
 | Generate Random Number in a range (with seed, Int and Dec)  | Done  | John |
 | Generate a list of N numbers (with seed and range,Int and Dec)  | Done  | Scott |
