@@ -98,7 +98,9 @@ namespace IS421GroupProject
 	public static double MarginOfError(decimal cval, decimal[] num){
             return (cval *(standarddev(num)/(Math.Sqrt(num.Length))));
         }
-		 
+	public static double CochranSample(int popsize, double zscore, double moe, double prop, double q){
+            return (((zscore**2)*prop*q)/(moe**2));
+        } 
 	
     }
 }
