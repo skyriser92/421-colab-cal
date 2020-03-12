@@ -92,7 +92,9 @@ namespace IS421GroupProject
             }
             return newarray;
         }
-		 
+	public static decimal ConfidenceIntervalSample(decimal standarderror, decimal[] num, decimal tscore){
+            return (meanfunct(num)+(tscore*(standarderror/(Math.Sqrt(num.Length)))));
+        }	 
 		 
 	
     }
