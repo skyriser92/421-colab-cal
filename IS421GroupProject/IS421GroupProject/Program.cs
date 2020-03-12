@@ -14,7 +14,11 @@ namespace IS421GroupProject
 		    var number = new decimal(rand.Next()*rand.NextDouble(num1, num2));
 		    return number;
 	    }
-        
+        public static int RandIntRange(int range1, int range2)
+        {
+            Random rand = new Random(25);
+            return rand.Next(range1, range2);
+        }
         
         
         
