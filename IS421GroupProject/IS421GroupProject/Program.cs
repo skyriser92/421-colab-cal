@@ -59,7 +59,11 @@ namespace IS421GroupProject
 	    Random rand = new Random();
 	    for (int i = 0;i == numitem;i++){
 		rand.Next(0,list.Length-1);
-	    }   
+	    }
+	public static int setlistgrab(int[] list, int seed){
+            Random rand = new Random(seed);
+            return rand.Next(0,list.Length-1);
+        }
 	    
     }
 }
