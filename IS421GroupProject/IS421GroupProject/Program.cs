@@ -142,6 +142,9 @@ namespace IS421GroupProject
             }
             return ((sum**2)/(mlist.Length-1));
         }
+	public static int standarddev(int[] mlist){
+            return (Math.Sqrt(variancefunct(mlist)));
+        }
 		 
 		 
     }
