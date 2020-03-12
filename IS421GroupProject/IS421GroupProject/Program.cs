@@ -75,6 +75,25 @@ namespace IS421GroupProject
             return rlist;
             //this returns duplicates
         }
-	    
+	public static int[,] systematicSampling(int[] randSample, int categorynum) {
+            int i = 1;
+            int count=0;
+            int amount = randSample.Length;
+            int[,] newarray = new int[categorynum,randSample.Length/(categorynum+1)];
+            foreach(int e in rsample){
+                newarray[i,count]= e;
+                switch(i){
+                    default:
+                        i++;
+                    case amount:
+                        i=1;
+                        count++;
+                }
+            }
+            return newarray;
+        }
+		 
+		 
+	
     }
 }
