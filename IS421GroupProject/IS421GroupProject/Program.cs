@@ -93,7 +93,7 @@ namespace IS421GroupProject
             return newarray;
         }
 	public static decimal ConfidenceIntervalSample(decimal standarderror, decimal[] num, decimal tscore){
-            return (meanfunct(num)+(tscore*(standarderror/(Math.Sqrt(num.Length)))));
+            return (meanfun(num)+(tscore*(standarderror/(Math.Sqrt(num.Length)))));
         }
 	public static double MarginOfError(decimal cval, decimal[] num){
             return (cval *(standarddev(num)/(Math.Sqrt(num.Length))));
@@ -135,7 +135,7 @@ namespace IS421GroupProject
             }
         }
 	public static int variancefunct(Int[] mlist){
-            int mean = meanfunct[mlist];
+            int mean = meanfun[mlist];
             int sum = 0;
             foreach (int i in mlist){
                 sum+=(i-mean);
@@ -143,9 +143,11 @@ namespace IS421GroupProject
             return ((sum**2)/(mlist.Length-1));
         }
 	public static int standarddev(int[] mlist){
-            return (Math.Sqrt(variancefunct(mlist)));
+            return (Math.Sqrt(variancefunt(mlist)));
         }
-		 
+	public static int skew(int[] mlist){
+            return((meanfun(mlist)-modefunct(mlist))/standarddev(mlist));
+        }	
 		 
     }
 }
