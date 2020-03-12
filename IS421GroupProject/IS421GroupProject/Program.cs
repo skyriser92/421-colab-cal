@@ -148,6 +148,13 @@ namespace IS421GroupProject
 	public static int standarddev(int[] mlist){
             return (Math.Sqrt(variancefunt(mlist)));
         }
+	public static int[] quartiles(int[] mlist){
+            int[] quartiles = new int[4];
+            quartiles[0] = mlist[mlist.Length/4];
+            quartiles[1] = mlist[mlist.Length/2];
+            quartiles[2] = mlist[(mlist.Length/4)*3];
+            return quartiles;
+        }
 	public static int skew(int[] mlist){
             return((meanfun(mlist)-modefunct(mlist))/standarddev(mlist));
         }
