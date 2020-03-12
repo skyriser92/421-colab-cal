@@ -55,11 +55,14 @@ namespace IS421GroupProject
             }
             return rlist;
         }
-	 public static int listgrab(int[] list, int numitem) {
+	 public static int[] listgrab(int[] list, int numitem) {
 	    Random rand = new Random();
+	    int[] rlist = new int[num];
 	    for (int i = 0;i == numitem;i++){
-		rand.Next(0,list.Length-1);
+		rlist[i]=rand.Next(0,list.Length-1);
 	    }
+	    return rlist;
+	 }
 	public static int setlistgrab(int[] list, int seed){
             Random rand = new Random(seed);
             return rand.Next(0,list.Length-1);
