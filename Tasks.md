@@ -12,13 +12,13 @@
 | Confidence Interval For a Sample Function  | Done  |
 | Margin of Error Function  | Done  |
 | Cochran's Sample Size Function  | Done  |
-| Mean  | Done  |
-| Median  | Done  |
-| Mode  | Done  |
-| Standard Deviation  | Done  |
-| Quartiles  | Done  |
-| Skewness  | Done  |
-| Sample Correlation  | Done  |
-| Population Correlation  | Done  |
-| Z-Score  | Done  |
+| Mean Function | Done  |
+| Median Function | Done  |
+| Mode Function | Done  |
+| Standard Deviation Function | Done  |
+| Quartiles Function | Done  |
+| Skewness Function | Done  |
+| Sample Correlation Function | Done  |
+| Population Correlation Function | Done  |
+| Z-Score Function | Done  |
 | Mean Deviation Function  | Done  |
