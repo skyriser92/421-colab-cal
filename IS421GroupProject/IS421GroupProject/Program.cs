@@ -125,7 +125,23 @@ namespace IS421GroupProject
                 }
             }
             return highnum;
-        }		 
+        }
+	public static int medianfunct(int[] mlist){
+            if (mlist.Length%2==0){
+                return (mlist[((mlist.Length/2)+((mlist.Length/2)+1))/2]);
+            }
+            else{
+                return (mlist[mlist.Length/2]);
+            }
+        }
+	public static int variancefunct(Int[] mlist){
+            int mean = meanfunct[mlist];
+            int sum = 0;
+            foreach (int i in mlist){
+                sum+=(i-mean);
+            }
+            return ((sum**2)/(mlist.Length-1));
+        }
 		 
 		 
     }
