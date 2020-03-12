@@ -43,7 +43,10 @@ namespace IS421GroupProject
             }
             return result;
         }
-	
+	public static int listgrab(int[] list) {
+		Random rand = new Random();
+		return rand.Next(0,list.Length-1);
+	}  
 	
         
     }
