@@ -22,5 +22,5 @@
 |  |  |  | Skewness Function | John |
 |  |  |  | Sample Correlation Function | John |
 |  |  |  | Population Correlation Function | Scott |
-|  |  |  | Z-Score Function | Done |
+|  |  |  | Z-Score Function | John |
 |  |  |  | Mean Deviation Function | Scott |
