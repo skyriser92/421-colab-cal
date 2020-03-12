@@ -169,6 +169,19 @@ namespace IS421GroupProject
             }
             return (((xlist.Length)*(sumxy))-(sumx*sumy))/(Math.Sqrt((xlist.Length*sumxsqrd-(sumx**2))*((xlist.Length*sumysqrd)-(sumy**2))));
         }
-		 
+	public static int sampcorco(int[] xlist, int[] ylist){
+            int sx=standarddev(xlist);
+            int sy=standarddev(ylist);
+            int covar = 0;
+            int xmean = meanfunct(xlist);
+            int ymean = meanfunct(ylist);
+            foreach (int i in xlist.Length){
+                foreach (int e in ylist.Length){
+                    covar += ((i-xmean)*(e-ymean));
+                }
+            }
+            covar = covar/(xlist.Length-1);
+            return (covar/(sx * sy));
+        }		 
     }
 }
