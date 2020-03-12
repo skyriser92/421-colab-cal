@@ -197,5 +197,9 @@ namespace IS421GroupProject
             covar = covar/(xlist.Length);
             return (covar/(sx * sy));
         }
+	public static int zscore(int[] mlist, int ele){
+            return ((ele-meanfunct(mlist))/standarddev(mlist));
+        }		
+		
     }
 }
