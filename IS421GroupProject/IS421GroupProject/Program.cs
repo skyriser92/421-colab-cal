@@ -34,6 +34,17 @@ namespace IS421GroupProject
             }
             return result;
         }
+	public static decimal[] RandListD(int x) {
+            Random rand = new Random(25);
+            decimal[] result = new decimal[x];
+            
+	    for (int i = 0; i <= x; i++) {
+                result[i] = (decimal)(rand.NextDouble() * rand.Next());
+            }
+            return result;
+        }
+	
+	
         
     }
 }
