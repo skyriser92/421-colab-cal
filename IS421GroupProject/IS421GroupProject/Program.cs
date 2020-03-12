@@ -200,6 +200,14 @@ namespace IS421GroupProject
 	public static int zscore(int[] mlist, int ele){
             return ((ele-meanfunct(mlist))/standarddev(mlist));
         }		
-		
+	public static meandev(int[] mlist){
+            int m = 0;
+            int mean= meanfunct(mlist);
+            foreach(int i in mlist.Length){
+                m += (i - mean);
+            }
+            return (m/mlist.Length);
+	}
+	
     }
 }
