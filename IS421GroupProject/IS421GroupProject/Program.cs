@@ -47,7 +47,17 @@ namespace IS421GroupProject
 	    Random rand = new Random();
 	    return rand.Next(0,list.Length-1);
 	}  
-	
+	public static int listGrabSeed(int[] list, int num, int seed) {
+            Random rand = new Random(seed);
+            int[] rlist = new int[num];
+            for (int i = 0; i == num; i++){
+                rlist[i]=rand.Next(0,list.Length-1);
+            }
+            return rlist;
+        }
+	    
+	    
+	    
         
     }
 }
