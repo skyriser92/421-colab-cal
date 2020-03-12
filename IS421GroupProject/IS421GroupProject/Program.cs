@@ -101,6 +101,15 @@ namespace IS421GroupProject
 	public static double CochranSample(int popsize, double zscore, double moe, double prop, double q){
             return (((zscore**2)*prop*q)/(moe**2));
         } 
-	
+	public static int meanfun(int[] meanlist) {
+            int culm = 0;
+            foreach(int i in meanlist){
+                culm += i;
+            }
+            return (culm/(meanlist.Length));
+        }
+		 
+		 
+		 
     }
 }
